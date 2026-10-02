@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>浜電工業株式会社｜採用サイト</title>
+<link rel="preload" as="image" href="assets/images/hero-rooftop.webp">
+
+<style>
+:root{
+  --brand:#008fb3;
+  --brand2:#27aac9;
+  --dark:#006d8c;
+  --ink:#17323e;
+  --text:#29414b;
+  --sub:#687d85;
+  --pale:#edf8fb;
+  --pale2:#f7fbfc;
+  --line:#d8e7eb;
+  --white:#fff;
+  --max:1180px;
+  --shadow:0 12px 35px rgba(20,70,85,.10);
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic UI","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+  color:var(--text);
+  line-height:1.75;
+  background:#fff;
+}
+
+a{color:inherit}
+
+.container{
+  width:min(calc(100% - 40px),var(--max));
+  margin:auto;
+}
+
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+
+.header-inner{
+  min-height:72px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.logo{
+  font-weight:900;
+  text-decoration:none;
+  color:var(--ink);
+}
+
+.logo span{
+  color:var(--brand);
+  font-size:13px;
+  margin-left:10px;
+}
+
+nav{
+  display:flex;
+  gap:22px;
+  align-items:center;
+  font-size:14px;
+}
+
+nav a{
+  text-decoration:none;
+}
+
+.nav-cta{
+  background:var(--brand);
+  color:#fff;
+  padding:10px 18px;
+  border-radius:100px;
+  font-weight:800;
+}
+
+
+/* HERO */
+
+.hero{
+  background:
+    linear-gradient(
+      115deg,
+      #fff 0%,
+      #fff 45%,
+      #e3f6fa 45%,
+      #d6f1f7 100%
+    );
+}
+
+.hero-inner{
+  min-height:610px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+  padding:75px 0 95px;
+}
+
+.eyebrow,
+.section-kicker{
+  color:var(--brand);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.15em;
+}
+
+.hero h1{
+  color:var(--ink);
+  font-size:clamp(42px,5.5vw,70px);
+  line-height:1.12;
+  margin:14px 0 24px;
+}
+
+.hero h1 em{
+  color:var(--brand);
+  font-style:normal;
+}
+
+.hero-lead{
+  color:#566b74;
+  font-size:18px;
+  max-width:650px;
+}
+
+.hero-photo{
+  min-height:455px;
+}
+
+
+/* PHOTO PLACEHOLDER */
+
+.photo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#66838d;
+  border:2px dashed #97c8d3;
+  border-radius:16px;
+  background:linear-gradient(135deg,#f5fcfd,#dff4f8);
+  padding:24px;
+  overflow:hidden;
+}
+
+.photo.large{min-height:390px}
+.photo.medium{min-height:260px}
+.photo.small{min-height:190px}
+
+
+/* BUTTON */
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:30px;
+}
+
+.btn{
+  min-height:50px;
+  padding:0 23px;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:900;
+}
+
+.primary{
+  background:var(--brand);
+  color:#fff;
+}
+
+.outline{
+  background:#fff;
+  border:1px solid var(--brand);
+  color:var(--dark);
+}
+
+
+/* NUMBERS */
+
+.numbers-wrap{
+  margin-top:-42px;
+  position:relative;
+  z-index:5;
+}
+
+.numbers{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-radius:14px;
+  background:#fff;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+.number{
+  text-align:center;
+  padding:27px 12px;
+  border-right:1px solid var(--line);
+}
+
+.number:last-child{
+  border:0;
+}
+
+.number strong{
+  display:block;
+  color:var(--dark);
+  font-size:30px;
+  line-height:1.2;
+}
+
+.number span{
+  display:block;
+  color:var(--sub);
+  margin-top:7px;
+  font-size:13px;
+}
+
+
+/* PHOTO BELT */
+
+.photo-belt{
+  display:grid;
+  grid-template-columns:1.15fr .85fr .85fr;
+  gap:16px;
+  margin-top:45px;
+}
+
+
+/* COMMON */
+
+section{
+  padding:90px 0;
+}
+
+.gray{
+  background:var(--pale2);
+}
+
+.blue{
+  background:var(--pale);
+}
+
+h2{
+  color:var(--ink);
+  font-size:clamp(30px,4vw,46px);
+  line-height:1.3;
+  margin:7px 0 22px;
+}
+
+h3{
+  color:var(--ink);
+}
+
+.lead{
+  color:var(--sub);
+  max-width:840px;
+  font-size:18px;
+}
+
+.grid2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+
+/* CHANGE CARDS */
+
+.change-title{
+  max-width:800px;
+  margin:0 auto 45px;
+  text-align:center;
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-top:5px solid var(--brand);
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 8px 24px rgba(20,65,80,.05);
+}
+
+.card-number{
+  color:var(--brand);
+  font-size:12px;
+  font-weight:900;
+}
+
+.card h3{
+  margin:7px 0;
+  font-size:21px;
+}
+
+
+/* ===================================
+   LARGE PHOTO SECTION 1
+=================================== */
+
+.visual-break{
+  padding:0;
+  background:#16323e;
+}
+
+.visual-photo{
+  position:relative;
+  min-height:590px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(12,39,50,.74) 0%,
+      rgba(12,39,50,.43) 48%,
+      rgba(12,39,50,.08) 100%
+    ),
+    linear-gradient(
+      135deg,
+      #7fadb8,
+      #d3e8ed
+    );
+}
+
+.visual-photo:after{
+  content:"";
+  white-space:pre;
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:rgba(255,255,255,.58);
+  text-align:center;
+  font-size:15px;
+  letter-spacing:.05em;
+}
+
+.visual-copy{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  padding:75px 0;
+  color:#fff;
+}
+
+.visual-copy .section-kicker{
+  color:#79d2e6;
+}
+
+.visual-copy h2{
+  color:#fff;
+  font-size:clamp(36px,5vw,58px);
+  margin:8px 0 18px;
+}
+
+.visual-copy p{
+  max-width:580px;
+  font-size:18px;
+  color:#eef8fa;
+}
+
+
+/* WORK */
+
+.quote{
+  background:#edf8fb;
+  border-left:5px solid var(--brand);
+  padding:20px 24px;
+  margin:28px 0;
+  color:var(--ink);
+  font-weight:800;
+  font-size:19px;
+}
+
+.work-photos{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.work-photos .main{
+  grid-column:1/-1;
+  min-height:295px;
+}
+
+
+/* AREA */
+
+.area-layout{
+  margin-top:38px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+
+.area-main{
+  padding:35px;
+  border-radius:14px;
+  color:#fff;
+  background:linear-gradient(135deg,var(--dark),var(--brand2));
+}
+
+.area-main small{
+  font-weight:900;
+  letter-spacing:.12em;
+}
+
+.area-main strong{
+  display:block;
+  font-size:34px;
+  margin:7px 0;
+}
+
+.area-sub{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:17px;
+}
+
+.area-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:22px;
+}
+
+.area-card small{
+  color:var(--brand);
+  font-weight:900;
+  letter-spacing:.1em;
+}
+
+.area-card strong{
+  color:var(--dark);
+  display:block;
+  font-size:23px;
+  margin-top:5px;
+}
+
+.area-note{
+  margin-top:22px;
+  border-left:4px solid var(--brand);
+  background:#fff;
+  padding:20px 24px;
+}
+
+
+/* ONE DAY */
+
+.day{
+  display:grid;
+  grid-template-columns:90px 1fr;
+  margin-top:30px;
+}
+
+.day-time,
+.day-text{
+  border-bottom:1px solid var(--line);
+  padding:17px 0;
+}
+
+.day-time{
+  color:var(--brand);
+  font-weight:900;
+}
+
+.day-text strong{
+  display:block;
+  color:var(--ink);
+}
+
+.day-photos{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.day-photos .big{
+  grid-column:1/-1;
+  min-height:280px;
+}
+
+
+/* ===================================
+   LARGE PHOTO SECTION 2
+=================================== */
+
+.editorial-visual{
+  padding:0;
+}
+
+.editorial-grid{
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  min-height:590px;
+}
+
+.editorial-photo{
+  position:relative;
+  min-height:590px;
+
+  background:
+    linear-gradient(
+      rgba(0,143,179,.10),
+      rgba(0,143,179,.10)
+    ),
+    linear-gradient(
+      135deg,
+      #cde8ee,
+      #6ea8b6
+    );
+}
+
+.editorial-photo:after{
+  content:"";
+  white-space:pre;
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:rgba(255,255,255,.75);
+  text-align:center;
+  font-size:15px;
+}
+
+.editorial-copy{
+  background:#fff;
+  padding:70px 55px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.editorial-copy h2{
+  font-size:clamp(32px,4vw,48px);
+}
+
+.editorial-copy p{
+  color:var(--sub);
+  font-size:18px;
+}
+
+.editorial-mini{
+  margin-top:28px;
+  padding-top:25px;
+  border-top:1px solid var(--line);
+  color:var(--dark);
+  font-weight:800;
+}
+
+
+/* ENVIRONMENT */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
+  margin-top:38px;
+}
+
+.stat{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:27px 12px;
+  text-align:center;
+}
+
+.stat strong{
+  display:block;
+  color:var(--dark);
+  font-size:29px;
+}
+
+.stat span{
+  display:block;
+  font-size:13px;
+  color:var(--sub);
+}
+
+.environment-body{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:28px;
+  margin-top:35px;
+  align-items:stretch;
+}
+
+.holiday-box{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:30px;
+}
+
+
+/* QUALIFICATIONS */
+
+.qualification-intro{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:45px;
+  align-items:center;
+}
+
+.qual-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:17px;
+  margin-top:38px;
+}
+
+.qual-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:25px;
+}
+
+.qual-num{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:var(--brand);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:900;
+}
+
+.qual-card h3{
+  margin:14px 0 8px;
+}
+
+.qual-message{
+  margin-top:28px;
+  background:linear-gradient(135deg,var(--dark),var(--brand2));
+  color:#fff;
+  border-radius:14px;
+  padding:32px 36px;
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:30px;
+}
+
+.qual-message h3{
+  color:#fff;
+  font-size:24px;
+  margin:3px 0;
+}
+
+
+/* CTA */
+
+.cta{
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(135deg,#007a9b,#23aac9);
+}
+
+.cta .container{
+  max-width:850px;
+}
+
+.cta h2{
+  color:#fff;
+}
+
+.cta p{
+  font-size:18px;
+  color:#ebf9fc;
+}
+
+.cta .buttons{
+  justify-content:center;
+}
+
+
+/* FOOTER */
+
+footer{
+  padding:35px 0;
+  border-top:1px solid var(--line);
+  background:#f1f7f8;
+  color:#63777f;
+  font-size:13px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  nav a:not(.nav-cta){
+    display:none;
+  }
+
+  .hero-inner,
+  .grid2,
+  .area-layout,
+  .qualification-intro,
+  .environment-body,
+  .editorial-grid{
+    grid-template-columns:1fr;
+  }
+
+  .grid3{
+    grid-template-columns:1fr;
+  }
+
+  .numbers,
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .photo-belt{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .photo-belt .photo:first-child{
+    grid-column:1/-1;
+  }
+
+  .qual-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .qual-message{
+    grid-template-columns:1fr;
+  }
+
+  .visual-photo{
+    min-height:500px;
+  }
+
+  .editorial-photo{
+    min-height:430px;
+  }
+
+  .editorial-copy{
+    padding:50px 35px;
+  }
+}
+
+@media(max-width:600px){
+
+  .container{
+    width:calc(100% - 28px);
+  }
+
+  section{
+    padding:65px 0;
+  }
+
+  .logo span{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:41px;
+  }
+
+  .numbers-wrap{
+    margin-top:-24px;
+  }
+
+  .area-sub,
+  .qual-grid,
+  .photo-belt,
+  .day-photos{
+    grid-template-columns:1fr;
+  }
+
+  .photo-belt .photo:first-child,
+  .day-photos .big{
+    grid-column:auto;
+  }
+
+  .number strong,
+  .stat strong{
+    font-size:23px;
+  }
+
+  .visual-copy{
+    padding:55px 0;
+  }
+
+  .visual-photo{
+    min-height:460px;
+  }
+
+}
+
+
+
+/* ===================================
+   REAL PHOTOS / 2026-10-01
+=================================== */
+.photo.is-image{
+  position:relative;
+  padding:0;
+  border:0;
+  background:#dbe7ea;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(20,65,80,.10);
+}
+
+.photo.is-image img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.hero-photo{
+  border-radius:18px;
+  box-shadow:0 18px 45px rgba(20,65,80,.16);
+}
+.hero-photo img{object-position:center 52%}
+
+.photo-belt .photo{min-height:275px}
+.photo-belt .photo:nth-child(1) img{object-position:center 54%}
+.photo-belt .photo:nth-child(2) img{object-position:center 50%}
+.photo-belt .photo:nth-child(3) img{object-position:center 43%}
+
+.work-photos .main img{object-position:center 49%}
+.work-photos .small:nth-child(2) img{object-position:center 48%}
+.work-photos .small:nth-child(3) img{object-position:center 50%}
+
+.day-photos .big img{object-position:center 50%}
+.day-photos .small:nth-child(2) img{object-position:center 52%}
+.day-photos .small:nth-child(3) img{object-position:center 50%}
+
+.environment-photo img{object-position:center 55%}
+
+.qualification-photos{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:14px;
+  min-height:315px;
+}
+.qualification-photos .photo{min-height:315px}
+.qualification-photos .photo:first-child img{object-position:center 51%}
+.qualification-subphoto img{object-position:center 48%}
+
+.visual-photo-real{
+  background:
+    linear-gradient(90deg,rgba(12,39,50,.78) 0%,rgba(12,39,50,.48) 48%,rgba(12,39,50,.10) 100%),
+    url("assets/images/local-landscape.webp") center 58% / cover no-repeat;
+}
+.visual-photo-real:after{display:none}
+
+.editorial-photo-real{
+  background:
+    linear-gradient(rgba(0,143,179,.08),rgba(0,143,179,.08)),
+    url("assets/images/cabinet-worker.webp") center 52% / cover no-repeat;
+}
+.editorial-photo-real:after{display:none}
+
+
+/* REAL COMPANY / BASE PHOTOS */
+.base-gallery{
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  grid-template-rows:1fr 1fr;
+  gap:15px;
+  margin-top:30px;
+}
+
+.base-photo{
+  position:relative;
+  min-height:220px;
+  margin:0;
+  border-radius:14px;
+  overflow:hidden;
+  background:#e8eff1;
+  box-shadow:0 10px 28px rgba(20,65,80,.09);
+}
+
+.base-photo.main{
+  grid-row:1 / 3;
+  min-height:455px;
+}
+
+.base-photo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.base-photo.main img{object-position:center 52%}
+.base-photo.entrance img{object-position:center 49%}
+.base-photo.fleet img{object-position:center 51%}
+
+.base-photo figcaption{
+  position:absolute;
+  left:14px;
+  bottom:14px;
+  z-index:2;
+  background:rgba(255,255,255,.92);
+  color:var(--ink);
+  padding:7px 11px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  box-shadow:0 4px 14px rgba(10,35,45,.10);
+}
+
+.company-photo-note{
+  margin-top:11px;
+  color:var(--sub);
+  font-size:12px;
+}
+
+/* Keep photos natural on narrow screens */
+@media(max-width:900px){
+  .qualification-photos{grid-template-columns:1fr 1fr;min-height:270px}
+  .qualification-photos .photo{min-height:270px}
+  .visual-photo-real{background-position:center 45%}
+  .editorial-photo-real{background-position:center 48%}
+  .base-gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .base-photo.main{grid-column:1/-1;grid-row:auto;min-height:390px}
+  .base-photo{min-height:250px}
+}
+
+@media(max-width:600px){
+  .hero-photo{min-height:390px}
+  .photo-belt .photo{min-height:235px}
+  .work-photos .main{min-height:255px}
+  .work-photos .small{min-height:190px}
+  .day-photos .big{min-height:250px}
+  .day-photos .small{min-height:210px}
+  .qualification-photos{grid-template-columns:1fr;min-height:auto}
+  .qualification-photos .photo{min-height:260px}
+  .qualification-subphoto{display:none}
+  .base-gallery{grid-template-columns:1fr}
+  .base-photo.main{grid-column:auto;min-height:280px}
+  .base-photo{min-height:220px}
+  .base-photo figcaption{left:10px;bottom:10px}
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+
+<div class="container header-inner">
+
+<a class="logo" href="#">
+浜電工業株式会社
+<span>採用サイト</span>
+</a>
+
+<nav>
+<a href="#work">仕事を知る</a>
+<a href="#area">現場・働き方</a>
+<a href="#environment">働く環境</a>
+<a href="#qualification">資格支援</a>
+<a href="#contact" class="nav-cta">応募前に話を聞く</a>
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-inner">
+
+<div>
+
+<div class="eyebrow">
+EXPERIENCED CAREER RECRUITING
+</div>
+
+<h1>
+掛川で、<br>
+<em>現場を任される</em><br>
+施工管理へ。
+</h1>
+
+<p class="hero-lead">
+電気設備施工管理の経験者を募集しています。
+転勤なし、夜勤なし。
+これまで培ってきた経験を活かしながら、
+静岡県西部の現場を担当していただきます。
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="#work">
+仕事内容を見る
+</a>
+
+<a class="btn outline" href="#contact">
+応募前に条件を確認する
+</a>
+
+</div>
+
+</div>
+
+
+<div class="photo hero-photo is-image">
+<img src="assets/images/hero-rooftop.webp" alt="屋上で設備確認を行う作業員の後ろ姿" fetchpriority="high">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NUMBERS -->
+
+<div class="container numbers-wrap">
+
+<div class="numbers">
+
+<div class="number">
+<strong>123日</strong>
+<span>年間休日</span>
+</div>
+
+<div class="number">
+<strong>夜勤なし</strong>
+<span>勤務時間帯</span>
+</div>
+
+<div class="number">
+<strong>転勤なし</strong>
+<span>掛川で働く</span>
+</div>
+
+<div class="number">
+<strong>約500万円</strong>
+<span>経験者 想定年収目安※</span>
+</div>
+
+</div>
+
+<p style="font-size:12px;color:#74868d">
+※経験・資格・能力等を考慮して決定します。
+</p>
+
+
+<div class="photo-belt">
+
+<div class="photo medium is-image">
+<img src="assets/images/crane-site.webp" alt="クレーン車を使った搬入作業の様子">
+</div>
+
+<div class="photo medium is-image">
+<img src="assets/images/meter-panel-close.webp" alt="電気設備盤を測定器で確認する作業の手元" loading="lazy">
+</div>
+
+<div class="photo medium is-image">
+<img src="assets/images/bucket-truck-industrial.webp" alt="高所作業車を使った作業風景" loading="lazy">
+</div>
+
+</div>
+
+</div>
+
+
+<!-- WHAT CHANGES -->
+
+<section>
+
+<div class="container">
+
+<div class="change-title">
+
+<div class="section-kicker">
+WHAT CHANGES
+</div>
+
+<h2>
+浜電工業への転職で、変わること。
+</h2>
+
+<p class="lead">
+今までの経験をリセットするのではなく、
+その経験を次の現場でどう活かすか。
+</p>
+
+</div>
+
+
+<div class="grid3">
+
+<div class="card">
+
+<div class="card-number">01</div>
+
+<h3>
+経験を活かして、<br>
+現場を任される。
+</h3>
+
+<p>
+十分な施工管理経験をお持ちの方には、
+経験を確認したうえで、
+早い段階から担当現場をお任せします。
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">02</div>
+
+<h3>
+転勤・夜勤なし。<br>
+掛川で働き続ける。
+</h3>
+
+<p>
+主な現場は掛川市・菊川市・御前崎市。
+現場によって直行直帰も可能です。
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">03</div>
+
+<h3>
+経験を、次の資格と<br>
+仕事につなげる。
+</h3>
+
+<p>
+受験料・講習料・教材費・交通費等を
+会社が支援します。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================
+     BIG PHOTO 1
+================================== -->
+
+<section class="visual-break">
+
+<div class="visual-photo visual-photo-real">
+
+<div class="container">
+
+<div class="visual-copy">
+
+<div class="section-kicker">
+OUR FIELD
+</div>
+
+<h2>
+この街の現場を、<br>
+自分の仕事にする。
+</h2>
+
+<p>
+掛川を拠点に、菊川・御前崎へ。
+地域の工場や公共施設など、
+身近な場所の電気設備を支える仕事です。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WORK -->
+
+<section class="gray" id="work">
+
+<div class="container grid2">
+
+<div>
+
+<div class="section-kicker">
+WORK
+</div>
+
+<h2>
+電気設備施工管理として、
+現場を動かす。
+</h2>
+
+<p class="lead">
+工場・学校・公共施設などの電気設備工事を中心に、
+工程・施工・予算・協力会社との調整など、
+現場全体を管理します。
+</p>
+
+<div class="quote">
+経験がある方には早い段階から現場を。<br>
+経験の浅い分野は、段階的に。
+</div>
+
+<p>
+これまで担当してきた工事や得意分野を確認しながら、
+経験・スキルに応じて担当する仕事を決めます。
+</p>
+
+</div>
+
+
+<div class="work-photos">
+
+<div class="photo main is-image">
+<img src="assets/images/control-panel-worker.webp" alt="工場内の制御盤で作業する技術者" loading="lazy">
+</div>
+
+<div class="photo small is-image">
+<img src="assets/images/panel-measure-wide.webp" alt="電気設備盤の測定作業" loading="lazy">
+</div>
+
+<div class="photo small is-image">
+<img src="assets/images/power-cabinet-measure.webp" alt="配電設備の確認作業" loading="lazy">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AREA -->
+
+<section id="area">
+
+<div class="container">
+
+<div class="section-kicker">
+WORK AREA
+</div>
+
+<h2>
+掛川を拠点に、
+静岡県西部の現場へ。
+</h2>
+
+<p class="lead">
+本社のある掛川市を拠点に、
+掛川市・菊川市・御前崎市などの現場を担当します。
+案件や工程によっては直行直帰も可能です。
+</p>
+
+
+<div class="area-layout">
+
+<div class="area-main">
+
+<small>BASE</small>
+
+<strong>
+掛川市
+</strong>
+
+<p>
+浜電工業の本社所在地。
+基本は本社へ集合し、
+社用車で担当現場へ向かいます。
+</p>
+
+</div>
+
+
+<div class="area-sub">
+
+<div class="area-card">
+<small>MAIN AREA</small>
+<strong>掛川市</strong>
+</div>
+
+<div class="area-card">
+<small>MAIN AREA</small>
+<strong>菊川市</strong>
+</div>
+
+<div class="area-card">
+<small>MAIN AREA</small>
+<strong>御前崎市</strong>
+</div>
+
+<div class="area-card">
+<small>WORK STYLE</small>
+<strong>直行直帰</strong>
+現場・工程によって可能
+</div>
+
+</div>
+
+</div>
+
+
+<div class="area-note">
+
+<strong>
+出張について
+</strong>
+
+<br>
+
+県外・宿泊出張もあります。
+長期出張は頻繁ではありませんが、
+案件によって発生する場合があります。
+夜勤はありません。
+
+</div>
+
+<div class="base-gallery" aria-label="浜電工業の本社と社用車">
+<figure class="base-photo main">
+<img src="assets/images/company-exterior.webp" alt="浜電工業本社の外観" loading="lazy">
+<figcaption>浜電工業 本社</figcaption>
+</figure>
+<figure class="base-photo entrance">
+<img src="assets/images/company-entrance.webp" alt="浜電工業本社の正面玄関" loading="lazy">
+<figcaption>本社 正面玄関</figcaption>
+</figure>
+<figure class="base-photo fleet">
+<img src="assets/images/company-fleet.webp" alt="浜電工業本社敷地に並ぶ社用車と工事車両" loading="lazy">
+<figcaption>本社敷地・社用車</figcaption>
+</figure>
+</div>
+<p class="company-photo-note">※掲載写真は浜電工業の本社・敷地です。</p>
+
+</div>
+
+</section>
+
+
+<!-- ONE DAY -->
+
+<section class="blue">
+
+<div class="container grid2">
+
+<div>
+
+<div class="section-kicker">
+ONE DAY
+</div>
+
+<h2>
+施工管理の1日。
+</h2>
+
+<p class="lead">
+現場や工程によって動き方は変わりますが、
+普段の仕事をイメージできるよう、
+一例をご紹介します。
+</p>
+
+
+<div class="day">
+
+<div class="day-time">
+朝
+</div>
+
+<div class="day-text">
+<strong>出社・現場へ移動</strong>
+社用車で担当現場へ。現場によっては直行します。
+</div>
+
+
+<div class="day-time">
+午前
+</div>
+
+<div class="day-text">
+<strong>現場確認・打ち合わせ</strong>
+進捗、安全、工程などを確認します。
+</div>
+
+
+<div class="day-time">
+昼
+</div>
+
+<div class="day-text">
+<strong>昼休憩</strong>
+現場の状況に合わせて休憩します。
+</div>
+
+
+<div class="day-time">
+午後
+</div>
+
+<div class="day-text">
+<strong>工程管理・施工確認・書類対応</strong>
+施工状況、写真、図面や工程などを確認・調整します。
+</div>
+
+
+<div class="day-time">
+夕方
+</div>
+
+<div class="day-text">
+<strong>翌日の確認・帰社または直帰</strong>
+現場によっては、そのまま直帰します。
+</div>
+
+</div>
+
+</div>
+
+
+<div class="day-photos">
+
+<div class="photo big is-image">
+<img src="assets/images/work-truck-loaded.webp" alt="資機材を積載した工事車両" loading="lazy">
+</div>
+
+<div class="photo small is-image">
+<img src="assets/images/bucket-truck-residential.webp" alt="高所作業車で建物の設備を確認する作業員" loading="lazy">
+</div>
+
+<div class="photo small is-image">
+<img src="assets/images/outdoor-cabinet-measure.webp" alt="屋外設備盤を測定する作業の手元" loading="lazy">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================
+     BIG PHOTO 2
+================================== -->
+
+<section class="editorial-visual">
+
+<div class="editorial-grid">
+
+<div class="editorial-photo editorial-photo-real" role="img" aria-label="配電設備を測定する技術者"></div>
+
+
+<div class="editorial-copy">
+
+<div class="section-kicker">
+YOUR EXPERIENCE
+</div>
+
+<h2>
+積み上げてきた経験を、<br>
+次の現場へ。
+</h2>
+
+<p>
+これまで身につけてきた施工管理の経験を、
+ゼロからやり直す必要はありません。
+</p>
+
+<p>
+得意な仕事は活かしながら、
+経験のない分野は少しずつ。
+浜電工業で担当できる仕事の幅を広げてください。
+</p>
+
+<div class="editorial-mini">
+経験に応じて、任せ方も変える。
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ENVIRONMENT -->
+
+<section id="environment">
+
+<div class="container">
+
+<div class="section-kicker">
+WORK STYLE
+</div>
+
+<h2>
+数字で見る、
+浜電工業の働き方。
+</h2>
+
+<p class="lead">
+休日、時間外労働、有給休暇など、
+転職前に確認しておきたい条件をまとめています。
+</p>
+
+
+<div class="stats">
+
+<div class="stat">
+<strong>123日</strong>
+<span>年間休日</span>
+</div>
+
+<div class="stat">
+<strong>約30時間</strong>
+<span>月平均時間外<br>※休日出勤含む</span>
+</div>
+
+<div class="stat">
+<strong>約8.6日</strong>
+<span>年間平均有給取得</span>
+</div>
+
+<div class="stat">
+<strong>なし</strong>
+<span>夜勤</span>
+</div>
+
+</div>
+
+
+<div class="environment-body">
+
+<div class="holiday-box">
+
+<h3>
+休日出勤について
+</h3>
+
+<p>
+現場の工程により休日出勤があります。
+直近1年間の実績では月平均約3.54日です。
+</p>
+
+<p>
+休日出勤した場合は原則として代休を取得します。
+当月中に代休等で精算できなかった場合は、
+給与で精算処理を行います。
+</p>
+
+</div>
+
+
+<div class="photo medium is-image environment-photo">
+<img src="assets/images/office-training-room.webp" alt="社内の会議・研修スペース" loading="lazy">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUALIFICATION -->
+
+<section class="blue" id="qualification">
+
+<div class="container">
+
+
+<div class="qualification-intro">
+
+<div>
+
+<div class="section-kicker">
+SKILL UP
+</div>
+
+<h2>
+資格取得を、
+本人任せにしない。
+</h2>
+
+<p class="lead">
+電気工事や施工管理の仕事では、
+資格取得や定期講習がキャリアにも直結します。
+浜電工業では費用面と勤務面の両方から支援しています。
+</p>
+
+</div>
+
+
+<div class="qualification-photos">
+<div class="photo medium is-image">
+<img src="assets/images/toolbelt-pole-worker.webp" alt="腰道具を身につけて設備作業を行う技術者" loading="lazy">
+</div>
+<div class="photo medium is-image qualification-subphoto">
+<img src="assets/images/electric-books.webp" alt="社内に保管されている電気工事関連の専門書" loading="lazy">
+</div>
+</div>
+
+</div>
+
+
+<div class="qual-grid">
+
+<div class="qual-card">
+
+<div class="qual-num">
+01
+</div>
+
+<h3>
+受験料・講習料
+</h3>
+
+<p>
+対象となる資格試験や講習の費用を会社が負担します。
+</p>
+
+</div>
+
+
+<div class="qual-card">
+
+<div class="qual-num">
+02
+</div>
+
+<h3>
+教材費
+</h3>
+
+<p>
+試験や講習に必要な教材も会社負担の対象です。
+</p>
+
+</div>
+
+
+<div class="qual-card">
+
+<div class="qual-num">
+03
+</div>
+
+<h3>
+交通費
+</h3>
+
+<p>
+資格試験や講習の受講に必要な交通費も支援します。
+</p>
+
+</div>
+
+
+<div class="qual-card">
+
+<div class="qual-num">
+04
+</div>
+
+<h3>
+講習日は勤務扱い
+</h3>
+
+<p>
+会社指定の講習・定期講習等は受講日を勤務として扱います。
+</p>
+
+</div>
+
+</div>
+
+
+<div class="qual-message">
+
+<div>
+
+<div style="
+font-size:11px;
+font-weight:900;
+letter-spacing:.15em;
+">
+CAREER UP
+</div>
+
+<h3>
+経験を活かしながら、
+次の資格へ。
+</h3>
+
+</div>
+
+<div>
+今持っている資格を活かすだけでなく、
+担当できる現場や業務の幅を広げるための資格取得も
+会社として支援します。
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<h2>
+転職先として合うか、
+応募する前に確認できます。
+</h2>
+
+<p>
+担当する現場、経験の活かし方、
+給与条件、県外からの転職など、
+応募前に確認したいことをお話しいただけます。
+</p>
+
+
+<div class="buttons">
+
+<a href="https://hamadenk.co.jp/info" class="btn outline">
+応募前に話を聞く
+</a>
+
+<a href="https://en-gage.net/hamadenk/work_127361/?via_recruit_page=1" class="btn outline" target="_blank" rel="noopener noreferrer">
+募集要項を見る
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="container">
+
+浜電工業株式会社<br>
+〒437-1413 静岡県掛川市国安24-26<br>
+TEL 0537-72-2008
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
