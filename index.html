@@ -694,7 +694,7 @@ h3{
 
 .life-support-cards{
   display:grid;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows:minmax(0,1fr) auto;
   gap:18px;
 }
 
@@ -743,6 +743,72 @@ h3{
   color:var(--dark);
   font-weight:900;
 }
+
+/* Emphasize dormitory details; keep family allowance independent of fluctuating amounts. */
+.support-card--dorm{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:22px;
+}
+
+.support-card--dorm p{
+  color:var(--sub);
+  margin-bottom:0;
+}
+
+.dorm-highlights{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+
+.dorm-highlight{
+  min-width:0;
+  min-height:94px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+  padding:14px 7px;
+  text-align:center;
+  background:var(--pale2);
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+
+.dorm-highlight strong{
+  color:var(--dark);
+  font-size:clamp(13px,1.25vw,17px);
+  line-height:1.4;
+  font-weight:900;
+  overflow-wrap:anywhere;
+}
+
+.dorm-highlight span{
+  color:var(--sub);
+  font-size:12px;
+  line-height:1.4;
+}
+
+.support-card--family{
+  background:var(--pale2);
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.support-card--family h4{
+  font-size:19px;
+  margin-bottom:6px;
+}
+
+.support-card--family p{
+  margin-bottom:0;
+  font-size:14px;
+  line-height:1.75;
+}
+
 
 
 /* QUALIFICATIONS */
@@ -912,6 +978,28 @@ footer{
 
   .support-card{
     padding:23px 20px;
+  }
+
+  .dorm-highlights{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:9px;
+  }
+
+  .dorm-highlight:first-child{
+    grid-column:1/-1;
+  }
+
+  .dorm-highlight{
+    min-height:75px;
+    padding:12px 10px;
+  }
+
+  .dorm-highlight strong{
+    font-size:16px;
+  }
+
+  .support-card--family{
+    padding:20px;
   }
 
   .container{
@@ -1748,7 +1836,7 @@ WORK STYLE
 
 <div class="life-support-head">
 <div class="section-kicker">LIFE SUPPORT</div>
-<h3>住まいと家族のサポート。</h3>
+<h3>住まいと暮らしのサポート。</h3>
 <p>掛川で新しく生活を始める方や、家族のいる方を支える制度があります。</p>
 </div>
 
@@ -1761,24 +1849,30 @@ WORK STYLE
 
 <div class="life-support-cards">
 
-<div class="support-card">
+<div class="support-card support-card--dorm">
+<div>
 <h4>単身向け社員寮</h4>
 <p>1ルームの社員寮があります。</p>
-<ul class="support-points">
-<li>寮費：<span class="support-price">基本給の4％</span></li>
-<li>駐車場あり</li>
-<li>会社まで車で約10分</li>
-</ul>
+</div>
+<div class="dorm-highlights" aria-label="社員寮の特徴">
+<div class="dorm-highlight">
+<strong>基本給の4％</strong>
+<span>寮費</span>
+</div>
+<div class="dorm-highlight">
+<strong>駐車場あり</strong>
+<span>車の利用も可能</span>
+</div>
+<div class="dorm-highlight">
+<strong>車で約10分</strong>
+<span>会社まで</span>
+</div>
+</div>
 </div>
 
-<div class="support-card">
-<h4>家族手当</h4>
-<ul class="support-points">
-<li>配偶者：<span class="support-price">月15,000円</span></li>
-<li>子・親 1人目：<span class="support-price">月5,000円</span></li>
-<li>子・親 2人目：<span class="support-price">月4,000円</span></li>
-<li>子・親 3人目：<span class="support-price">月3,000円</span></li>
-</ul>
+<div class="support-card support-card--family">
+<h4>家族手当制度あり</h4>
+<p>配偶者・子・親を対象とした家族手当を設けています。支給条件等は社内規定によります。</p>
 </div>
 
 </div>
